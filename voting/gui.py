@@ -60,7 +60,6 @@ class MainWindow(QMainWindow):
 
 
     def startResultsUI(self):
-        self.votes = [24, 35]
         self.ResultsUI = ResultsUI(self)
         self.setWindowTitle("Ergebnisse")
         self.setCentralWidget(self.ResultsUI)
