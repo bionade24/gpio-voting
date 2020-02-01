@@ -70,6 +70,7 @@ class MainWindow(QMainWindow):
     @QtCore.pyqtSlot(int, name='button_clicked')
     def button_clicked(self, i):
         self.votes[i] += 1
+        self.startResultsUI()
 
 
 def main(argv):
