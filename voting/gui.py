@@ -72,14 +72,14 @@ class MainWindow(QMainWindow):
         self.startResultsUI()
 
 
-def main(argv):
+def main(argv=None):
     app = QApplication(argv)
     main = MainWindow()
     main.setWindowTitle("Abstimmung Thema")
     main.show()
-    sys.exit(app.exec_())
+    app.exec_()
 
 
 
 if __name__ == '__main__':
-    main(sys.argv)
+    main()
