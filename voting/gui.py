@@ -4,7 +4,7 @@ from pyqtgraph import PlotWidget
 import pyqtgraph as pg
 import sys
 import os
-import gpio
+from voting import gpio
 
 
 class GPIOThread(QtCore.QThread):
